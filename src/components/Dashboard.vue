@@ -1,7 +1,7 @@
-<!-- filepath: c:\Users\Jamaico Magayo\flask\frontend\src\components\Dashboard.vue -->
+<!-- filepath: c:\Users\Jamaico Magayo\flask\frontend\src\components\TaskDashboard.vue -->
 <template>
   <div>
-    <h2>Dashboard</h2>
+    <h2>Task Dashboard</h2>
     <form @submit.prevent="addTask">
       <input v-model="newTask" placeholder="New Task" required />
       <button type="submit">Add Task</button>
@@ -17,6 +17,9 @@
 </template>
 
 <script setup>
+/**
+ * Component: TaskDashboard
+ */
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
